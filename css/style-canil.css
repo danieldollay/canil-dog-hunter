@@ -1,0 +1,441 @@
+/********************* NORMALIZE ************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*/ HTML5 display-role reset for older browsers */ article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+#container {
+    max-width: 980px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+/* MENU SUPERIOR */
+#header {
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-superior ul {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu-superior a {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #645844;
+
+}
+
+
+#menu-superior a:hover {
+    border-top: 1px solid #77AF72;
+    border-bottom: 1px solid #77AF72;
+    background-color: #77AF72;
+    color: #fff !important;
+    cursor: pointer;
+    -webkit-transition: all 0.6s 0s ease;
+    -moz-transition: all 0.6s 0s ease;
+    -o-transition: all 0.6s 0s ease;
+    transition: all 0.4s 0s ease;
+
+}
+
+/* BANNER */
+
+.banner-canil {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.spitz-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.texto-banner {
+    font-family: 'Fredericka the Great', cursive;
+    color: #645844;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.div-texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ESPECIALIZAÇÃO */
+
+#especializacao {
+    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 20px 0px;
+    border-radius: 8px;
+}
+
+.texto-especializacao {
+    align-self: center;
+    font-size: 30px;
+    color: #645844;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slide-especializacao  img{
+    border-radius: 8px;
+}
+
+/* BLOCO SOBRE */
+
+#blocos-sobre {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.titulo-sobre {
+    text-align: center;
+    color: #645844;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0px;
+
+}
+
+.texto-sobre {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -5px 2px 6px 2px rgba(0,0,0,0.23); 
+    box-shadow: 0px 10px 13px -7px #000000, -5px 2px 6px 2px rgba(0,0,0,0.23);
+    /* border-radius: 8px; */
+    padding: 10px;
+    width: 24%;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+/* QUEM SOMOS */
+#quem-somos {
+    border: 5px solid #645844;
+    padding: 20px;
+}
+
+.titulo-quem-somos {
+    text-align: center;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto-quem-somos {
+    font-size: 18px;
+    color: #826F52;
+    font-family: sans-serif;
+}
+
+.familia-canil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-familia-canil {
+    border: 5px solid #826F52;
+    margin: 20px 0;
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    color: #826F52;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.img-familia-canil img{
+    width: 100%;
+}
+
+
+.botao-whatsapp {
+    position: fixed;
+    font-size: 90px;
+    color: #25D366;
+    right: 5%;
+    bottom: 5%;
+}
+/********************** O CANIL  ***************************/
+
+#ocanil {
+    border: 5px solid #645844;
+    padding: 20px;
+}
+
+.titulo-o-canil {
+    text-align: center;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitulo-nossos-caes {
+    font-size: 20px;
+    text-align: center;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.imagens-canil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imagem-canil img {
+    width: 400px;
+    height: 250px;
+    margin: 20px 0;
+} 
+
+/******************** NOSSOS CÃES  **********************/
+
+#nossos-caes {
+    border: 5px solid #645844;
+    padding: 20px;
+}
+
+.titulo-nossos-caes {
+    text-align: center;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fotos-caes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foto-cao img {
+    margin: 15px 0;
+}
+
+/****************** CONTATO **********************/
+
+#contato {
+    border: 5px solid #645844;
+    padding: 20px;
+}
+
+.titulo-contato {
+    text-align: center;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px !important;
+    border-bottom: 3px solid #645844;
+    font-weight: bold;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.redes-sociais-contato {
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.redes-sociais-contato p{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #826f52
+}
+
+.redes-sociais-contato span{
+    margin-right: 20px;
+}
+
+.siga-contato {
+    font-size: 40px;
+    text-align: center;
+    color: #645844;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.botao-whatsapp-contato {
+    font-size: 60px;
+    color: green;
+}
+.botao-instagram-contato {
+    font-size: 60px;
+    color: #FB0174;
+}
+.botao-facebook-contato {
+    font-size: 60px;
+    color: #3D5A98;
+}
