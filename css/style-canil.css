@@ -138,12 +138,18 @@ table {
 
 
 /* MENU SUPERIOR */
+
+#btn-mobile {
+    display: none;
+}
+
+
 #header {
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0);
 }
 
-#menu-superior ul {
+#menu {
     display: flex;
     margin-top: 20px;
     flex-direction: row;
@@ -153,7 +159,7 @@ table {
     align-items: center;
 }
 
-#menu-superior a {
+#menu a {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 5px 20px;
@@ -165,7 +171,7 @@ table {
 }
 
 
-#menu-superior a:hover {
+#menu a:hover {
     border-top: 1px solid #77AF72;
     border-bottom: 1px solid #77AF72;
     background-color: #77AF72;
@@ -233,7 +239,7 @@ table {
     display: none;
 }
 
-.slide-especializacao  img{
+.slide-especializacao img {
     border-radius: 8px;
 }
 
@@ -259,8 +265,8 @@ table {
 }
 
 .texto-sobre {
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, -5px 2px 6px 2px rgba(0,0,0,0.23); 
-    box-shadow: 0px 10px 13px -7px #000000, -5px 2px 6px 2px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -5px 2px 6px 2px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 10px 13px -7px #000000, -5px 2px 6px 2px rgba(0, 0, 0, 0.23);
     /* border-radius: 8px; */
     padding: 10px;
     width: 24%;
@@ -311,7 +317,7 @@ table {
 
 }
 
-.img-familia-canil img{
+.img-familia-canil img {
     width: 100%;
 }
 
@@ -323,6 +329,7 @@ table {
     right: 5%;
     bottom: 5%;
 }
+
 /********************** O CANIL  ***************************/
 
 #ocanil {
@@ -347,16 +354,18 @@ table {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .imagens-canil {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .imagem-canil img {
     width: 400px;
     height: 250px;
     margin: 20px 0;
-} 
+}
 
 /******************** NOSSOS CÃES  **********************/
 
@@ -372,6 +381,11 @@ table {
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.foto-cao {
+    display: flex;
+
 }
 
 .fotos-caes {
@@ -411,14 +425,15 @@ table {
     flex-direction: column;
     margin-top: 60px;
 }
-.redes-sociais-contato p{
+
+.redes-sociais-contato p {
     display: flex;
     align-items: center;
     font-size: 18px;
     color: #826f52
 }
 
-.redes-sociais-contato span{
+.redes-sociais-contato span {
     margin-right: 20px;
 }
 
@@ -435,10 +450,12 @@ table {
     font-size: 60px;
     color: green;
 }
+
 .botao-instagram-contato {
     font-size: 60px;
     color: #FB0174;
 }
+
 .botao-facebook-contato {
     font-size: 60px;
     color: #3D5A98;
@@ -460,6 +477,7 @@ table {
     .texto-especializacao-desktop {
         display: none;
     }
+
     .texto-especializacao-mobile {
         align-self: center;
         font-size: 20px;
@@ -485,15 +503,14 @@ table {
         align-items: center;
     }
 
-    #menu-superior ul {
+    /* #menu-superior ul {
         display: flex;
         margin-top: 20px;
         flex-direction: row;
-        flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
         align-items: center;
-    }
+    } */
 
     #especializacao {
         box-shadow: 0px 0px 6px 5px rgb(0 0 0 / 25%);
@@ -528,13 +545,15 @@ table {
         border-radius: 8px;
         flex-direction: column;
     }
-    .texto-sobre p{
+
+    .texto-sobre p {
         text-align: center;
     }
 
     .botao-whatsapp {
         font-size: 60px;
-    }    
+    }
+
     /* FIM HOME */
 
     /* INÍCIO QUEM SOMOS */
@@ -542,7 +561,7 @@ table {
     #quem-somos {
         border: none;
     }
-    
+
     .titulo-quem-somos {
         font-size: 31px;
     }
@@ -592,7 +611,8 @@ table {
         display: flex;
         width: 100%;
     }
-    .foto-cao img{
+
+    .foto-cao img {
         width: 120%;
         border-radius: 5px;
     }
@@ -613,4 +633,71 @@ table {
         font-size: 14px;
     }
 
+
+
+    /* MENU HAMBURGER */
+
+    #header {
+        margin-bottom: 0px;
+    }
+
+    #btn-mobile {
+        display: block;
+        font-size: 23px;
+        background: transparent;
+        border: none;
+        margin-right: 30px;
+        color: #fff;
+    }
+
+    #menu {
+        display: block !important;
+        width: 100%;
+        top: 30px;
+        right: 0px;
+        position: absolute;
+        z-index: 999999999999999;
+        padding: 10px 0;
+        height: 40px;
+        transition: .6s;
+        visibility: hidden;
+    }
+
+    #menu-superior {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        align-content: space-around;
+        align-items: center;
+        justify-content: flex-end;
+        background: #826f52;
+    }
+
+    #menu-superior.active #menu {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #000000e6;
+        height: calc(40vh - 70px);
+        visibility: visible;
+    }
+
+    #menu a {
+        border: none;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    #menu li {
+        border: none;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    #menu a:hover {
+        border: none;
+        background-color:unset;
+    }
 }
