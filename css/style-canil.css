@@ -454,7 +454,7 @@ table {
     /* INÍCIO HOME */
 
     .texto-banner {
-        font-size: 35px;
+        font-size: 29px;
     }
 
     .texto-especializacao-desktop {
@@ -560,6 +560,57 @@ table {
 
     /* INÍCIO CANIL */
 
-    
+    .titulo-o-canil {
+        font-size: 31px;
+    }
+
+    #ocanil {
+        border: none;
+    }
+
+    .imagem-canil img {
+        border-radius: 5px;
+    }
+
+    /* FIM O CANIL */
+
+    /* INÍCIO NOSSOS CÃES */
+
+    .titulo-nossos-caes {
+        font-size: 31px;
+    }
+
+    .subtitulo-nossos-caes {
+        font-size: 14px;
+    }
+
+    #nossos-caes {
+        border: none;
+    }
+
+    .foto-cao {
+        display: flex;
+        width: 100%;
+    }
+    .foto-cao img{
+        width: 120%;
+        border-radius: 5px;
+    }
+
+    /* FIM NOSSOS CÃES */
+
+    /* INÍCIO CONTATO */
+
+    #contato {
+        border: none;
+    }
+
+    .titulo-contato {
+        font-size: 31px;
+    }
+
+    .siga-contato {
+        font-size: 14px;
+    }
 
 }
